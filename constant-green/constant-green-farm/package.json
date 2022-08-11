@@ -5,7 +5,7 @@
   "description": "",
   "main": "package.json",
   "author": "Luis Jean <luisjeanknowsbest@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build"
