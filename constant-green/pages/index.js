@@ -5,7 +5,7 @@ import { Product, FooterBanner, HeroBanner } from '../components';
 const index = () => {
   return (
     <div>
-      HeroBanner
+      <HeroBanner />
 
       <div className="products-heading">
         <h2>Best selling microgreens</h2>
@@ -16,7 +16,7 @@ const index = () => {
         {['PRODUCT 1', 'PRODUCT 2'].map((product) => product)}
       </div>
 
-      FooterBanner
+      <FooterBanner />
       </div>
   );
   }
