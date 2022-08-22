@@ -1,23 +1,36 @@
 import React from 'react'
 
+import { client } from '../constant-green-farm/lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
-const index = () => {
+const index = ({products, bannerData}) => {
   return (
     <div>
       <HeroBanner />
-
+      {console.log(bannerData)}
       <div className="products-heading">
         <h2>Best selling microgreens</h2>
         <p>Range of greens</p>
       </div>
 
       <div className="products-container">
-        {['PRODUCT 1', 'PRODUCT 2'].map((product) => product)}
+        {products?.map((product) => product.name)}
       </div>
 
       <FooterBanner />
       </div>
   );
+  }
+
+  export const getServerSideProps = async () => {
+    const query = '*[_type == "product"]';
+    const products = await client.fetch(query);
+
+    const bannerQuery = '*[_type == "banner"]';
+    const bannerData = await client.fetch(bannerQuery);
+
+    return {
+      props: { products, bannerData }
+    }
   }
 export default index
