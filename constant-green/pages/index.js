@@ -14,7 +14,7 @@ const index = ({products, bannerData}) => {
       </div>
 
       <div className="products-container">
-        {products?.map((product) => product.name)}
+        {products?.map((product) => <Product key={product._id} product={product} />)}
       </div>
 
       <FooterBanner />
