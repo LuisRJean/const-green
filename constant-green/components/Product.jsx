@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import { urlFor } from '../constant-green-farm/lib/client';
 
+
 const Product = ({ product: { image, name, slug, price } }) => {
   return (
     <div>
@@ -13,8 +14,8 @@ const Product = ({ product: { image, name, slug, price } }) => {
             height={250}
             className="product-image"
             />
-          <p className="product-name">{name}</p>
-          <p className="product-price">${price}</p>
+          <p className="product-name">Sunflowers</p>
+          <p className="product-price">$10</p>
         </div>
 
       </Link>
