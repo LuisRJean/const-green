@@ -10,7 +10,7 @@ const index = ({products, bannerData}) => {
       {console.log(bannerData)}
       <div className="products-heading">
         <h2>Best selling microgreens</h2>
-        <p>Range of greens</p>
+        <p>Wide range of greens</p>
       </div>
 
       <div className="products-container">
