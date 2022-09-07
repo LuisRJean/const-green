@@ -1,4 +1,5 @@
 import React from 'react'
+import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
 
@@ -12,7 +13,7 @@ const ProductDetails = ({ product, products }) => {
                 <div className="image-container">
                       <img src="https://cdn.sanity.io/images/763jxe6w/production/ac723f1630169acfef668141685c71e8902fe3d2-512x288.webp" />
                         </div>
-                        <div className="small-images-conatiner">
+                        {/*<div className="small-images-conatiner">
                             {image?.map((image) => (
                                 <img src={urlFor(item)} 
                                 className=""
@@ -21,7 +22,21 @@ const ProductDetails = ({ product, products }) => {
                                 />
                                 
                             ))}
+                        </div>  */}
+                </div>
+
+                <div className="product-details-desc">
+                    <h1>{name}</h1>
+                    <div className="reviews">
+                        <div>
+
+
                         </div>
+
+
+                    </div>
+
+
                 </div>
             </div>
     </div>
