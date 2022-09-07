@@ -18,6 +18,10 @@ const ProductDetails = ({ product, products }) => {
   )
 }
 
+export const getStaticPaths = async () => {
+
+}    
+
 export const getStaticProps = async ({ params: { slug }}) => {
     const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
     const productQuery = '*[_type == "product"]'
