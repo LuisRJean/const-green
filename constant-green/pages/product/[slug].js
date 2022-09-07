@@ -40,6 +40,13 @@ const ProductDetails = ({ product, products }) => {
                     <h4>Details: </h4>
                     <p>These sunflowers are grown in the best soil and are harvested at the right time to ensure the best quality. They are packed in a way that they are fresh and healthy when you receive them.</p>
                     <p className="price"> $10.00</p>
+                    <div className="quantity">
+                        <h3>Quantity: </h3>
+                        <p>
+
+                        </p>
+
+                    </div>
                 </div>
             </div>
     </div>
