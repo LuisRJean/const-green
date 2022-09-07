@@ -2,7 +2,7 @@ import React from 'react'
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
 
-const ProductDetails = ({ products, product }) => {
+const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price } = product;
   return (
@@ -19,14 +19,13 @@ const ProductDetails = ({ products, product }) => {
 }
 
 export const getStaticProps = async ({ params: { slug }}) => {
-    const query = `*[_type == "product" && slug.current == '${slug}'s][0]`;
-    const productQuery = '*[_type == "product"]';
+    const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
+    const productQuery = '*[_type == "product"]'
 
     const product = await client.fetch(query);
-    const products = await client.fetch(productQuery);
+    const products = await client.fetch(productsQuery);
 
-    const bannerQuery = '*[_type == "banner"]';
-    const bannerData = await client.fetch(bannerQuery);
+    console.log(product);
 
     return {
         props: { products, product }
