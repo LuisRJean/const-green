@@ -9,12 +9,8 @@ const FooterBanner = ({ footerBanner }) => {
     <div className="footer-banner-container">
       <div className="banner-desc">
         <div className="left">
-
         </div>
         <div className="right">
-
-
-          
         </div>
 
 
