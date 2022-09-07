@@ -2,7 +2,9 @@ import React from 'react'
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
 
-const ProductDetails = () => {
+const ProductDetails = ({ products, product }) => {
+
+    const { image, name, details, price } = product;
   return (
     <div>
         <div className="product-detail-container">
@@ -27,7 +29,7 @@ export const getStaticProps = async ({ params: { slug }}) => {
     const bannerData = await client.fetch(bannerQuery);
 
     return {
-        props: { products, bannerData }
+        props: { products, product }
     }
 }
 export default ProductDetails
