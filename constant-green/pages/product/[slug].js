@@ -14,7 +14,11 @@ const ProductDetails = ({ product, products }) => {
                         </div>
                         <div className="small-images-conatiner">
                             {image?.map((image) => (
-                                <img src={urlFor(item)} />
+                                <img src={urlFor(item)} 
+                                className=""
+                                onMouseEnter=""
+                                
+                                />
                                 
                             ))}
                         </div>
