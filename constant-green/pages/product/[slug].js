@@ -21,6 +21,7 @@ export const getStaticProps = async ({ params: { slug }}) => {
     const productQuery = '*[_type == "product"]';
 
     const product = await client.fetch(query);
+    const products = await client.fetch(productQuery);
 
     const bannerQuery = '*[_type == "banner"]';
     const bannerData = await client.fetch(bannerQuery);
