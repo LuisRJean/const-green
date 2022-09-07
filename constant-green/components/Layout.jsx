@@ -3,7 +3,10 @@ import Head from 'next/head';
 
 const Layout = () => {
   return (
-    <div>Layout</div>
+    <div className="layout">
+      <Head>
+        <title>Luis Store</title>
+        </Head></div>
   )
 }
 
