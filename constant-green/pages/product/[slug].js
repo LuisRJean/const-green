@@ -47,6 +47,14 @@ const ProductDetails = ({ product, products }) => {
                                 <AiOutlineMinus />
 
                             </span>
+                          <span className="num" onClick="">
+                                0
+
+                          </span>
+                          <span className="minus" onClick="">
+                              <AiOutlineMinus />
+
+                          </span>
 
                         </p>
 
