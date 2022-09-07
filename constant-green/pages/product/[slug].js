@@ -29,8 +29,11 @@ const ProductDetails = ({ product, products }) => {
                     <h1>{name}</h1>
                     <div className="reviews">
                         <div>
-
-
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar />
+                            <AiFillStar /> 
+                            <AiOutlineStar />
                         </div>
 
 
