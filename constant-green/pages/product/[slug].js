@@ -16,7 +16,7 @@ const ProductDetails = () => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({}) => {
     const query = '*[_type == "product"]';
     const products = await client.fetch(query);
 
