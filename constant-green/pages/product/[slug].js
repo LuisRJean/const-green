@@ -59,6 +59,10 @@ const ProductDetails = ({ product, products }) => {
                         </p>
 
                     </div>
+                    <div className="buttons">
+                        <button type="button" className="add-to-cart" OnClick="">Add to Cart</button>
+                        
+                        </div>
                 </div>
             </div>
     </div>
