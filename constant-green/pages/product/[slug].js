@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+import { client, urlFor } from '../../constant-green-farm/lib/client';
 
 const ProductDetails = () => {
   return (
