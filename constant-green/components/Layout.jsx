@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const Layout = () => {
   return (
-    <div>
+    <div className="layout">
       
     </div>
   )
