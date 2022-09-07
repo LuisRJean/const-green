@@ -13,7 +13,10 @@ const ProductDetails = ({ product, products }) => {
                       <img src="https://cdn.sanity.io/images/763jxe6w/production/ac723f1630169acfef668141685c71e8902fe3d2-512x288.webp" />
                         </div>
                         <div className="small-images-conatiner">
-                            
+                            {image?.map((image) => (
+                                <img src={urlFor(item)} />
+                                
+                            ))}
                         </div>
                 </div>
             </div>
