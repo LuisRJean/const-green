@@ -38,7 +38,7 @@ const ProductDetails = ({ product, products }) => {
                         <p>(20)</p>
                     </div>
                     <h4>Details: </h4>
-                    <p>{details}</p>
+                    <p>These sunflowers are grown in the best soil and are harvested at the right time to ensure the best quality. They are packed in a way that they are fresh and healthy when you receive them.</p>
 
                 </div>
             </div>
