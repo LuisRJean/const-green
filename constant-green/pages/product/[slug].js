@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
@@ -7,14 +7,16 @@ import { Product } from '../../components';
 const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price } = product;
+
+    const [index, setIndex] = useState(0);
   return (
     <div>
         <div className="product-detail-container">
             <div>
                 <div className="image-container">
-                      <img src="https://cdn.sanity.io/images/763jxe6w/production/ac723f1630169acfef668141685c71e8902fe3d2-512x288.webp" />
+                      <img src={"https://cdn.sanity.io/images/763jxe6w/production/ac723f1630169acfef668141685c71e8902fe3d2-512x288.webp"[index]} />
                         </div>
-                        {/*<div className="small-images-conatiner">
+                        <div className="small-images-conatiner">
                             {image?.map((image) => (
                                 <img src={urlFor(item)} 
                                 className=""
@@ -23,7 +25,7 @@ const ProductDetails = ({ product, products }) => {
                                 />
                                 
                             ))}
-                        </div>  */}
+                        </div>  
                 </div>
 
                 <div className="product-detail-desc">
@@ -40,7 +42,7 @@ const ProductDetails = ({ product, products }) => {
                     </div>
                     <h4>Details: </h4>
                     <p>These sunflowers are grown in the best soil and are harvested at the right time to ensure the best quality. They are packed in a way that they are fresh and healthy when you receive them.</p>
-                    <p className="price"> $10.00</p>
+                    <p className="price"> $5.00</p>
                     <div className="quantity">
                         <h3>Quantity: </h3>
                         <p className="quantity-desc">
