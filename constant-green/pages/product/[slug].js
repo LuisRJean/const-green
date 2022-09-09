@@ -30,7 +30,7 @@ const ProductDetails = ({ product, products }) => {
                 </div>
 
                 <div className="product-detail-desc">
-                    <h1>Sunflowers</h1>
+                    <h1>{name}</h1>
                     <div className="reviews">
                         <div>
                             <AiFillStar />
