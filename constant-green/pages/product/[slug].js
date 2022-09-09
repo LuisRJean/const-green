@@ -14,14 +14,15 @@ const ProductDetails = ({ product, products }) => {
         <div className="product-detail-container">
             <div>
                 <div className="image-container">
-                      <img src={"https://cdn.sanity.io/images/763jxe6w/production/ac723f1630169acfef668141685c71e8902fe3d2-512x288.webp"[index]} />
-                        </div>
-                        <div className="small-images-conatiner">
-                            {image?.map((image) => (
-                                <img src={urlFor(item)} 
-                                className=""
-                                onMouseEnter=""
-                                
+                      <img src={urlFor(image && image[index])} className="product-detail-image" />
+                  </div>
+                  <div className="small-images-container">
+                      {image?.map((item, i) => (
+                          <img
+                              key={i}
+                              src={urlFor(item)}
+                              className={i === index ? 'small-image selected-image' : 'small-image'}
+                              onMouseEnter={() => setIndex(i)}
                                 />
                                 
                             ))}
