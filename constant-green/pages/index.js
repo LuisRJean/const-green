@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { client } from '../const-green/lib/client';
+import { client } from '../constant-green-farm/lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
 const index = ({products, bannerData}) => {
