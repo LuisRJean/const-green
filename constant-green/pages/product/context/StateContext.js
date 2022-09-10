@@ -6,10 +6,19 @@ const Context = createContext();
 export const StateContext = ({ children }) => {
     const [showCart, setShowCart] = useState(false);
     const [cartItems, setCartItems] = useState([]);
-    const [totalPrice, setTotalPrice] = useState([]);
+    const [totalPrice, setTotalPrice] = useState();
     const [totalQuantities, setTotalQuantities] = useState(0);
     const [qty, setQty] = useState(1);
 
+    const incQty = () => {
+        setQty((prevQty) => prevQty + 1);
+
+    const decQty = () => {
+        setQty((prevQty) => {
+            if (prevQty - 1 < 1) return 1;
+            return prevQty - 1;
+        });
+    }
     return (
         <Context.Provider
             value={{
@@ -18,11 +27,13 @@ export const StateContext = ({ children }) => {
                 cartItems,
                 totalPrice,
                 totalQuantities,
-                qty
+                qty,
+                incQty,
+                decQty,
             }}
         >
             {children}
         </Context.Provider>
     )
 }
-
+}
