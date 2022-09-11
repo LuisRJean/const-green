@@ -1,4 +1,5 @@
 import React from 'react'; 
+import { Toaster } from 'react-hot-toast';
 
 import { Layout } from '../components';
 import '../styles/globals.css';
@@ -6,12 +7,12 @@ import { StateContext } from '../pages/product/context/StateContext';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <StateContext>
+    //<StateContext>
       <Layout>
         <Toaster />
         <Component {...pageProps} />
       </Layout>
-    </StateContext>
+    //</StateContext>
   )
 }
 
