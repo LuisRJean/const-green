@@ -3,12 +3,15 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
 import { Product } from '../../components';
+import { useStateContext } from '../../constant-green-farm/pages/product/context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price } = product;
 
     const [index, setIndex] = useState(0);
+    const { decQty, incQty, qty } = useStateContext();
+    
   return (
     <div>
         <div className="product-detail-container">
