@@ -3,15 +3,13 @@ import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-
 
 import { client, urlFor } from '../../constant-green-farm/lib/client';
 import { Product } from '../../components';
-import { useStateContext } from '../../constant-green-farm/pages/product/context/StateContext';
+import { useStateContext } from '../../pages/product/context/StateContext';
 
 const ProductDetails = ({ product, products }) => {
 
     const { image, name, details, price } = product;
 
     const [index, setIndex] = useState(0);
-    const { decQty, incQty, qty } = useStateContext();
-
   return (
     <div>
         <div className="product-detail-container">
@@ -50,15 +48,15 @@ const ProductDetails = ({ product, products }) => {
                     <div className="quantity">
                         <h3>Quantity: </h3>
                         <p className="quantity-desc">
-                          <span className="minus" onClick={decQty}>
+                            <span className="minus" onClick="">
                                 <AiOutlineMinus />
 
                             </span>
-                          <span className="num" >
-                                {qty}
+                          <span className="num" onClick="">
+                                1
 
                           </span>
-                          <span className="plus" onClick={incQty}>
+                          <span className="plus" onClick="">
                               <AiOutlinePlus />
 
                           </span>
