@@ -7,12 +7,12 @@ import { StateContext } from '../pages/product/context/StateContext';
 
 function MyApp({ Component, pageProps }) {
   return (
-    //<StateContext>
+    <StateContext>
       <Layout>
         <Toaster />
         <Component {...pageProps} />
       </Layout>
-    //</StateContext>
+    </StateContext>
   )
 }
 
