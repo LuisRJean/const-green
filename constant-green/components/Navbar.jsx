@@ -3,6 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import { AiOutlineShop } from 'react-icons/ai';
 
+import { Cart } from './';
+
 const Navbar = () => {
   return (
     <div className="navbar-container">
