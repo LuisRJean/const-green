@@ -15,8 +15,9 @@ const Cart = () => {
   
   return (
     <div className="cart-wrapper" ref={cartRef}>
-      <button type="button" className="cart-heading" onClick={() => setShowCart(false)}><AiOutlineLeft /> <span>
-        Your Cart</span>
+      <button type="button" className="cart-heading" onClick={() => setShowCart(false)}><AiOutlineLeft /> 
+        <span className="heading">Your Cart</span>
+        <span className="cart-num-items">({totalQuantities} items)</span>
         </button>
 
     </div>
