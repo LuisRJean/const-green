@@ -4,8 +4,10 @@ import Link from 'next/link';
 import { AiOutlineShop } from 'react-icons/ai';
 
 import { Cart } from './';
+import { useStateContext  } from '../pages/product/context/StateContext';
 
 const Navbar = () => {
+  const { showCart, setShowCart, totalQuantities } = useStateContext(); 
   return (
     <div className="navbar-container">
       <p className="logo">
