@@ -10,8 +10,11 @@ import { urlFor } from '../../constant-green/constant-green-farm/lib/client';
 
 
 const Cart = () => {
+  const cartRef = useRef();
+  const { totalPrice, totalQuantities, cartItems, setShowCart } = useStateContext();
+  
   return (
-    <div>
+    <div className="cart-wrapper" ref={cartRef}>
 
     </div>
   )
