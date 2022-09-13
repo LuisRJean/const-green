@@ -19,7 +19,7 @@ const Navbar = () => {
         <span className="cart-items-qty">{totalQuantities}</span>
       </button>
 
-      <Cart />
+      {showCart && <Cart />}
       </div>
   )
 }
