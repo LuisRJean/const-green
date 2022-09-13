@@ -14,9 +14,9 @@ const Navbar = () => {
         <Link href="/">Constant Green</Link>
       </p>
 
-      <button type="button" className="cart-icon" onClick="">
+      <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShop />
-        <span className="cart-items-qty">0</span>
+        <span className="cart-items-qty">{totalQuantities}</span>
       </button>
 
       <Cart />
