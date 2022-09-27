@@ -1,3 +1,5 @@
 import Stripe from 'stripe';
 
-const stripe = new Stripe();
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
+
+export default async function handler(req, res) 
