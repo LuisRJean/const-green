@@ -98,7 +98,7 @@ const Cart = () => {
             </div>
             <div className="btn-container">
               <button type="button" className="btn" onClick={handleCheckout}>
-                Checkout
+                Checkout Now
               </button>
             </div>
           </div>
