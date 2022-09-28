@@ -4,7 +4,6 @@ const stripe = require('Stripe')(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
-    console.log(req.body.cartItems)
 
 
         try {
@@ -14,7 +13,7 @@ export default async function handler(req, res) {
                 payment_method_types: ['card'],
                 billing_address_collection: 'auto',
                 shipping_options: [
-                    { shipping_rate: 'shr_1Kn3IaEnylLNWUqj5rqhg9oV' },
+                    { shipping_rate: 'shr_1LmpUrFi3LnWynYNjJWxLfLC' },
                 ],
                 line_items: req.body.map((item) => {
                     const img = item.image[0].asset._ref;
