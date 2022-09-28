@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 
 import { useStateContext } from '../pages/product/context/StateContext';
 import { urlFor } from '../../constant-green/constant-green-farm/lib/client';
-import getStripe from '../../constant-green/constant-green-farm/lib/getstripe.js';
+import getStripe from '../../constant-green/constant-green-farm/lib/getStripe.js';
 
 const Cart = () => {
   const cartRef = useRef();
