@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import { useStateContext } from '../../pages/product/context/StateContext';
 
-const success = () => {
+const Success = () => {
     const { setCartItems, setTotalPrice, setTotalQuantites } = useStateContext();
     const [order, setOrder] = useState(null);
 
