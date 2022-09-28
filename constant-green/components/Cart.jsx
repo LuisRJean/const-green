@@ -13,7 +13,7 @@ const Cart = () => {
   const { totalPrice, totalQuantities, cartItems, setShowCart, toggleCartItemQuanitity, onRemove } = useStateContext();
 
   const handleCheckout = async () => {
-    const stripe = await getStripe('pk_live_51LmliCFi3LnWynYNB8N8jBDQzTQFv20gxR0h4Wmmb2UIvK7ictIEzCwmyqULSyIF2WxrF13rzRqFc9LuEo7rh94O0060RZ8rAh');
+    const stripe = await getStripe('pk_test_51LmliCFi3LnWynYNKLc8XxVnAlTB6eb7TNTUdLD5k25BZU9OMdmZedto9f5MM2NZrMFplMQPp14qPVD1sCBUerjl007i1mYikA');
 
     const response = await fetch('/api/stripe', {
       method: 'POST',
