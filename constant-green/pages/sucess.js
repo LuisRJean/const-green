@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
@@ -20,4 +20,4 @@ const sucess = () => {
   )
 }
 
-export default sucess
+export default Sucess
