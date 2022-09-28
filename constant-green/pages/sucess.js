@@ -15,8 +15,7 @@ const sucess = () => {
             <p className="icon">
                 <BsBagCheckFill />
             </p>
-            </div>
-
+        </div>
     </div>
   )
 }
