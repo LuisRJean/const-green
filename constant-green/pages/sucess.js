@@ -20,4 +20,4 @@ const sucess = () => {
   )
 }
 
-export default Sucess
+export default Success
