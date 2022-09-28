@@ -2,7 +2,9 @@ import React from 'react'
 
 const sucess = () => {
   return (
-    <div></div>
+    <div>
+        
+    </div>
   )
 }
 
