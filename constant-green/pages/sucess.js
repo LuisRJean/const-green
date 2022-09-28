@@ -2,7 +2,7 @@ import React from 'react'
 
 const sucess = () => {
   return (
-    <div>sucess</div>
+    <div></div>
   )
 }
 
