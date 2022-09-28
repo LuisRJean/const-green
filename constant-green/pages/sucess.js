@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
 
-import { useStateContext } from '../../pages/product/context/StateContext';
-import { runFireworks } from '../../constant-green-farm/lib/utils';
+import { useStateContext } from '../pages/product/context/StateContext';
+import { runFireworks } from '../constant-green-farm/lib/utils';
 
 const Success = () => {
     const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
