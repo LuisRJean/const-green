@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
 
 import { useStateContext } from '../../pages/product/context/StateContext';
+import { runFireworks } from '../../constant-green-farm/lib/utils';
 
 
 const Success = () => {
