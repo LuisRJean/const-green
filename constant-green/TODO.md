@@ -16,7 +16,7 @@
 #should be next to the cart icon
 #should have the following options:
 #About
-#Contact Us
+#Contac
 #FAQ
 #Terms and Conditions
 #Privacy Policy
