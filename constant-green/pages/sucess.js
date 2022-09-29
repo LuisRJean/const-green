@@ -6,7 +6,7 @@ import { useStateContext } from '../pages/product/context/StateContext';
 import { runFireworks } from '../constant-green-farm/lib/utils';
 
 
-const success = () => {
+const Success = () => {
     const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
 
     useEffect(() => {
@@ -41,4 +41,4 @@ const success = () => {
     )
 }
 
-export default success
+export default Success
