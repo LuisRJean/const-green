@@ -18,3 +18,4 @@
 #About Us
 #Contact Us
 #FAQ
+#Terms and Conditions
