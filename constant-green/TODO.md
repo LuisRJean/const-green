@@ -22,3 +22,4 @@
 #Privacy Policy
 #Shipping and Returns
 #How to Order
+#Legal
