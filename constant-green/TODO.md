@@ -3,7 +3,7 @@
 #CHANGE BUTTON 'BUY' TO 'BUY NOW' ON THE HOME PAGE
 
 
-
+#All Red Buttons on the site should be changed to Green
 #DARK GREEN (PASTEL) COLOR FOR THE BUTTONS
 #BEE5B0
 
