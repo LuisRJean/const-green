@@ -15,3 +15,4 @@
 #Create a hoverDropDown menu for the 'About' button on the home page
 #should be next to the cart icon
 #should have the following options:
+#About Us
