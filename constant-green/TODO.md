@@ -20,3 +20,4 @@
 #FAQ
 #Terms and Conditions
 #Privacy Policy
+#Shipping and Returns
