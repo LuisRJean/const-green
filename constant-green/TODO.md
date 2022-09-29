@@ -16,3 +16,4 @@
 #should be next to the cart icon
 #should have the following options:
 #About Us
+#Contact Us
