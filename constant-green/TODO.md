@@ -20,5 +20,4 @@
 #FAQ
 #Security
 #Careers
-#How to Order
 #Legal
