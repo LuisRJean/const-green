@@ -21,3 +21,4 @@
 #Terms and Conditions
 #Privacy Policy
 #Shipping and Returns
+#How to Order
