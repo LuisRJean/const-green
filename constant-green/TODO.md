@@ -20,6 +20,5 @@
 #FAQ
 #Security
 #Careers
-#Shipping and Returns
 #How to Order
 #Legal
