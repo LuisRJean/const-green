@@ -19,7 +19,7 @@
 #Contact
 #FAQ
 #Terms and Conditions
-#Privacy Policy
+#Careers
 #Shipping and Returns
 #How to Order
 #Legal
