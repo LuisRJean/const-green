@@ -18,7 +18,7 @@
 #About
 #Contact
 #FAQ
-#Terms and Conditions
+#Security
 #Careers
 #Shipping and Returns
 #How to Order
