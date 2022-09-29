@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { BsBagCheckFill } from 'react-icons/bs';
 
-import { useStateContext } from '../pages/product/context/StateContext';
+import { useStateContext } from './product/context/StateContext';
 import { runFireworks } from '../constant-green-farm/lib/utils';
 
 
@@ -27,8 +27,8 @@ const Success = () => {
                 <p className="email-msg">Check your email inbox for the receipt.</p>
                 <p className="description">
                     If you have any questions, please email
-                    <a className="email" href="mailto:order@example.com">
-                        order@example.com
+                    <a className="email" href="mailto:constantmicrogreens@gmail.com">
+                        constantmicrogreens@gmail.com
                     </a>
                 </p>
                 <Link href="/">
