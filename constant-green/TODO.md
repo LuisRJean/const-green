@@ -19,3 +19,4 @@
 #Contact Us
 #FAQ
 #Terms and Conditions
+#Privacy Policy
